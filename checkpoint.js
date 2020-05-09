@@ -6,20 +6,6 @@ function menorMayor(numeros) {
   // que contenga el menor número del arreglo en la posición cero y el mayor número del arreglo en la posición 1.
   // Ej: menorMayor([4, 6, 1, 7, 15]) // retorna [1, 15]
 
-  var menor = menor[0];
-  var mayor = mayor[1];
-  
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] < menor) {
-      menor = array[i];
-    }
-    if (arry[i] > mayor) {
-      meyor = array[i];
-    }
-  }
-  return menor;
-  return mayor;
-
 }
 
 function stringMasLarga(strings) {
@@ -81,8 +67,8 @@ function pluck(array, propiedad) {
   // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
   // productos.pluck(productos, 'name') // ['TV LCD', 'Computadora']
   // pista: es una buena oportunidad para usar map.
-  return pluck.map(function (array) {
-    return array[propiedad];
+  var pluck = array.map(function (element) {
+    return element['propiedad'];
   })
 
 }
@@ -108,25 +94,25 @@ function crearClasePersona() {
       // el metodo addFriend recibe un string nombre y un entero edad y debe agregar un objeto:
       // { nombre: nombre, edad: edad} al arreglo de amigos de la persona.
       // no debe retornar nada.
-      this.amigos = new Persona({ nombre: nombre, edad: edad });
+      this.amigos.push({
+        nombre: nombre,
+        edad: edad,
+      })
     }
 
     addHobby(hobby) {
       // este método debe agregar un hobby (hobby) al arreglo de hobbies de la persona.
       // no debe retornar nada.
-
+      this.hobbies.push([
+        
+      ])
     }
     getFriends() {
       // Escribe una función que retorne un arreglo con sólo los nombres del arreglo de amigos
       // de la persona.
       // Ej:
       // persona.getFriends() // retorna ['toni', 'Leo', 'Manu']
-      for (let i = 0; i < this.amigos.length; i++) {
-        if (this.nombre === this.amigos[i].nombre) {
-          return this.amigos[i];
-        }
-      }
-      return 'no existe el amigo'
+      return this.amigos;
     }
 
     getHobbies() {
