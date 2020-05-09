@@ -1,0 +1,23 @@
+#contenedor{
+    width: 500px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+li{
+    font-size: 25px;
+    color: red;
+}
+
+img {
+    align-self: center;
+}
+
+a:link {
+
+    color:green;
+
+}
