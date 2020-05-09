@@ -5,15 +5,22 @@ function menorMayor(numeros) {
   // Escribi una función llamada menorMayor que tome como entrada un arreglo de números y devuelva un arreglo 
   // que contenga el menor número del arreglo en la posición cero y el mayor número del arreglo en la posición 1.
   // Ej: menorMayor([4, 6, 1, 7, 15]) // retorna [1, 15]
-  var menor = 0;
-  var mayor = 1;
-  numeros.reduce(function(acc , element) {
-    return Math.min(0);
-  }); 
-  myArray.reduce(function(acc , element) {
-    return Math.max(1);
-  });
-  return menorMayor();
+  var menor = numeros[0];
+  var mayor = numeros[1];
+
+  for (let i = 1; i < numeros.length; i++) {
+    if (menor > numeros[i]) {
+      menor = numeros[i];
+    }
+    else if (mayor < numeros[i]) {
+      mayor = numeros[i];
+    }
+  }
+
+  var menorMayor = [menor, mayor];
+  return menorMayor;
+ 
+
 }
 
 function stringMasLarga(strings) {
@@ -119,7 +126,10 @@ function crearClasePersona() {
       // de la persona.
       // Ej:
       // persona.getFriends() // retorna ['toni', 'Leo', 'Manu']
-      return this.amigos(nombre[i]);
+      var amigos = this.amigos.map(function(element){
+        return element;
+      });
+      return amigos;
     }
 
     getHobbies() {
