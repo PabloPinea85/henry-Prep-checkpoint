@@ -110,16 +110,14 @@ function crearClasePersona() {
       // de la persona.
       // Ej:
       // persona.getFriends() // retorna ['toni', 'Leo', 'Manu']
-      return this.amigos;
+      return this.amigos.nombre;
     }
 
     getHobbies() {
       // Escribe una función que retorne un arreglo con los hobbies de la persona
       // Ej:
       // persona.getHobbies() // retorna ['correr', 'dormir', 'nadar']
-      return this.hobbies.forEach(function (element) {
-        return element.hobbies;
-      })
+      return this.hobbies;
     }
 
     getPromedioEdad() {
