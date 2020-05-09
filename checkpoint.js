@@ -67,9 +67,11 @@ function pluck(array, propiedad) {
   // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
   // productos.pluck(productos, 'name') // ['TV LCD', 'Computadora']
   // pista: es una buena oportunidad para usar map.
-  var pluck = array.map(function (element) {
-    return element['propiedad'];
+
+  return array.map(function (element) {
+    return element[propiedad];
   })
+
 
 }
 
@@ -103,14 +105,14 @@ function crearClasePersona() {
     addHobby(hobby) {
       // este método debe agregar un hobby (hobby) al arreglo de hobbies de la persona.
       // no debe retornar nada.
-     this.hobbies.push(hobby);
+      this.hobbies.push(hobby);
     }
     getFriends() {
       // Escribe una función que retorne un arreglo con sólo los nombres del arreglo de amigos
       // de la persona.
       // Ej:
       // persona.getFriends() // retorna ['toni', 'Leo', 'Manu']
-      return this.amigos.nombre;
+      return this.amigos['mal'];
     }
 
     getHobbies() {
