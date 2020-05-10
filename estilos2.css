@@ -1,0 +1,129 @@
+#div-negro {
+
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    border-top: solid 1px black;
+    border-bottom: solid 30px black;
+    border-left: solid 1px black;
+    border-right: solid 20px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 800px;
+    height: 800px;
+    
+}
+#uno {
+    
+    margin-left: auto;
+    width: 100%;
+    height: 80px;
+    border: solid 5px salmon;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+#uno-contact {
+    background-color: seagreen;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#uno-careers{
+    background-color: violet;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#uno-about {
+
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#uno div {
+
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dos {
+
+    width: 100%;
+    height: 150px;
+    border: solid 5px salmon;
+    display: flex;
+    flex-direction: column;
+}
+#dos div {
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+#dos-contact {
+    background-color: seagreen;
+
+}
+#dos-careers{
+    background-color: violet;
+}
+#dos-about {
+
+    background-color: yellow;
+
+}
+
+#tres {
+
+    width: 100%;
+    height: 80px;
+    border: solid 5px salmon;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+#tres div {
+
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+
+}
+#tres-contact {
+    background-color: seagreen;
+
+}
+#tres-careers{
+    background-color: violet;
+}
+#tres-about {
+
+    background-color: yellow;
+
+}
